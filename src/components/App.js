@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Header from './Header';
 import NavBar from './Navbar';
+import BacklogList from './BacklogList';
+
+
 
 function App() {
   const [backlog, setBacklog] = useState([]);
@@ -13,9 +16,10 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div>
       <NavBar />
       <Header />
+      <BacklogList />
     </div>
   );
 }
