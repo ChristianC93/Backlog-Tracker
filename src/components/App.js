@@ -19,7 +19,7 @@ function App() {
     <div>
       <NavBar />
       <Header />
-      <BacklogList />
+      <BacklogList games={backlog} />
     </div>
   );
 }

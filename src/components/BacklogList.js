@@ -1,10 +1,11 @@
 import React from "react";
 
 
-function BacklogList() {
+
+function BacklogList({games}) {
     return (
         <div>
-
+         
         </div>
     )
 }
