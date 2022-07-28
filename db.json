@@ -1,5 +1,5 @@
 {
-  "data": [
+  "games": [
     {
       "id": 1,
       "name": "Metro Exodus",
@@ -9,6 +9,36 @@
       "id": 2,
       "name": "Persona 5 Strikers",
       "image": "https://thegamesdb.net/game.php?id=83188#cover"
+    },
+    {
+      "id": 3,
+      "name": "Star Wars Jedi Fallen Order",
+      "image": "https://thegamesdb.net/game.php?id=64819#cover"
+    },
+    {
+      "id": 4,
+      "name": "Octopath Traveler",
+      "image": "https://thegamesdb.net/game.php?id=66669#cover"
+    },
+    {
+      "id": 5,
+      "name": "Dying Light 2",
+      "image": "https://thegamesdb.net/game.php?id=64826#cover"
+    },
+    {
+      "id": 6,
+      "name": "Horizon Zero Dawn",
+      "image": "https://thegamesdb.net/game.php?id=76108#cover"
+    },
+    {
+      "id": 7,
+      "name": "Dishonored 2",
+      "image": "https://thegamesdb.net/game.php?id=40970#cover"
+    },
+    {
+      "id": 8,
+      "name": "Batman Arkham knight",
+      "image": "https://thegamesdb.net/game.php?id=21456#cover"
     }
   ]
 }
