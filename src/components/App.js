@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from 'react';
+import { Switch,Route } from 'react-router-dom';
 import Header from './Header';
 import NavBar from './Navbar';
 import BacklogList from './BacklogList';
+import Form from './Form';
 
 
 
@@ -19,7 +21,8 @@ function App() {
     <div>
       <NavBar />
       <Header />
-      <BacklogList games={backlog} />
+      <Form />
+      <BacklogList games={backlog} />  
     </div>
   );
 }
