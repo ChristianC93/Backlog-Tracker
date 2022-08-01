@@ -3,42 +3,42 @@
     {
       "id": 1,
       "name": "Metro Exodus",
-      "image": "https://thegamesdb.net/game.php?id=60164#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/60164-1.jpg"
     },
     {
       "id": 2,
       "name": "Persona 5 Strikers",
-      "image": "https://thegamesdb.net/game.php?id=83188#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/83188-1.jpg"
     },
     {
       "id": 3,
       "name": "Star Wars Jedi Fallen Order",
-      "image": "https://thegamesdb.net/game.php?id=64819#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/64819-1.jpg"
     },
     {
       "id": 4,
       "name": "Octopath Traveler",
-      "image": "https://thegamesdb.net/game.php?id=66669#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/66669-1.jpg"
     },
     {
       "id": 5,
       "name": "Dying Light 2",
-      "image": "https://thegamesdb.net/game.php?id=64826#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/64826-1.jpg"
     },
     {
       "id": 6,
       "name": "Horizon Zero Dawn",
-      "image": "https://thegamesdb.net/game.php?id=76108#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/76108-1.jpg"
     },
     {
       "id": 7,
       "name": "Dishonored 2",
-      "image": "https://thegamesdb.net/game.php?id=40970#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/40970-1.jpg"
     },
     {
       "id": 8,
       "name": "Batman Arkham knight",
-      "image": "https://thegamesdb.net/game.php?id=21456#cover"
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/21456-1.jpg"
     }
   ]
 }
