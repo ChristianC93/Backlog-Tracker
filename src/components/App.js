@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header';
+import Home from './Header';
 import NavBar from './Navbar';
 import BacklogList from './BacklogList';
-import Form from './Form';
 import CompletedList from './CompletedList';
 
 
@@ -30,9 +29,9 @@ function App() {
         <Route exact path="/completed">
           <CompletedList />
         </Route>
-        <Header />
-        <Form />
-
+        <Route exact path="/">
+          <Home />
+        </Route>
       </Switch>
     </div>
   );
