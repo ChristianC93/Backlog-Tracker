@@ -2,6 +2,11 @@ import React, {useState} from "react";
 
 
 function Home() {
+    const [newGame, setNewGame] = useState({
+        name: "",
+        image: ""
+    })
+    
     return (
         <div>
             <h1>Welcome To Your Backlog!</h1>
