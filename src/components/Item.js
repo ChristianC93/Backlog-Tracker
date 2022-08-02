@@ -1,7 +1,10 @@
 import React from "react";
 
 
-function Item({game}) {
+function Item({game, onGameClick}) {
+    function handleButtonClick() {
+        onGameClick(game);
+    }
     return (
         <div>
             <div>
@@ -11,7 +14,7 @@ function Item({game}) {
                 <img src={game.image} alt={game.name} width="400" height="400" />
             </div>
             <div>
-                <button>Completed</button>
+                <button onClick={handleButtonClick}>Completed</button>
             </div>
         </div>
     )

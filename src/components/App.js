@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './Header';
+import Home from './Home';
 import NavBar from './Navbar';
 import BacklogList from './BacklogList';
 import CompletedList from './CompletedList';
@@ -10,7 +10,7 @@ import CompletedList from './CompletedList';
 
 function App() {
   const [backlog, setBacklog] = useState([]);
-  const [completed, setCompleted] = useState([]);
+  const [completedGames, setCompletedGames] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/games")
@@ -18,16 +18,21 @@ function App() {
       .then((data) => setBacklog(data))
   }, [])
 
+  function onGameClick(game) {
+    const clickedGame = backlog.find((g) => g === game);
+    setCompletedGames([...completedGames, clickedGame]);
+  }
+
 
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/backlog">
-          <BacklogList games={backlog} />
+          <BacklogList games={backlog} onGameClick={onGameClick} />
         </Route>
         <Route exact path="/completed">
-          <CompletedList />
+          <CompletedList completedGames={completedGames} />
         </Route>
         <Route exact path="/">
           <Home />
