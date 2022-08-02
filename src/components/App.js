@@ -23,6 +23,10 @@ function App() {
     setCompletedGames([...completedGames, clickedGame]);
   }
 
+  function handleSubmit(newGame) {
+    console.log(newGame);
+  }
+
 
   return (
     <div>
@@ -35,7 +39,7 @@ function App() {
           <CompletedList completedGames={completedGames} />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home onSubmit={handleSubmit}/>
         </Route>
       </Switch>
     </div>
