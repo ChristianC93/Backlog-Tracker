@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-function Home({onSubmit}) {
+function Home({onAddGame}) {
     const [newGame, setNewGame] = useState({
         name: "",
         image: ""
@@ -16,13 +16,21 @@ function Home({onSubmit}) {
         });
     }
     function handleSubmit(e) {
-        e.preventDefault()
-        onSubmit(newGame)
+        e.preventDefault();
+        fetch("http://localhost:3000/games", {
+            method:"POST",
+            headers: {
+                "Content-Type":"application/json",
+            },
+            body: JSON.stringify(newGame)
+        })
+        .then((r) => r.json())
+        .then((data) => onAddGame(data));
     }
 
     return (
         <div>
-            <h1>Welcome To Your Backlog!</h1>
+            <h1>Backlog Tracker</h1>
             <h2>Add to Backlog</h2>
             <form onSubmit={handleSubmit}>
                 <label> Name:</label><br></br>

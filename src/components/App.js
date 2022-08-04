@@ -14,17 +14,16 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3000/games")
-      .then((r) => r.json())
-      .then((data) => setBacklog(data))
+    .then((r) => r.json())
+    .then((data) => setBacklog(data))
   }, [])
 
   function onGameClick(game) {
-    const clickedGame = backlog.find((g) => g === game);
-    setCompletedGames([...completedGames, clickedGame]);
+    setCompletedGames([...completedGames, game]);
   }
 
-  function handleSubmit(newGame) {
-    console.log(newGame);
+  function handleAddGame(newGame) {
+    setBacklog([...backlog, newGame])
   }
 
 
@@ -39,7 +38,7 @@ function App() {
           <CompletedList completedGames={completedGames} />
         </Route>
         <Route exact path="/">
-          <Home onSubmit={handleSubmit}/>
+          <Home onAddGame={handleAddGame} />
         </Route>
       </Switch>
     </div>
