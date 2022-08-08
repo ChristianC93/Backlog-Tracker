@@ -15,6 +15,7 @@ function Home({onAddGame}) {
             [name]: value
         });
     }
+    
     function handleSubmit(e) {
         e.preventDefault();
         fetch("http://localhost:3000/games", {
@@ -34,9 +35,9 @@ function Home({onAddGame}) {
             <h2>Add to Backlog</h2>
             <form onSubmit={handleSubmit}>
                 <label> Name:</label><br></br>
-                <input type="text" placeholder="name..." name="name" value={newGame.name} onChange={handleChange}></input><br></br>
+                <input type="text" placeholder="name..." name="name" size="50" value={newGame.name} onChange={handleChange}></input><br></br>
                 <label> Image Link:</label><br></br>
-                <input type="text" placeholder="link to image..." name="image" value={newGame.image} onChange={handleChange}></input><br></br><br></br>    
+                <input type="text" placeholder="link to image..." name="image" size="50" value={newGame.image} onChange={handleChange}></input><br></br><br></br>    
                 <input type="submit" value="Add to Backlog"></input>
             </form>
         </div>

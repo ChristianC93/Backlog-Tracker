@@ -19,11 +19,16 @@ function App() {
   }, [])
 
   function onGameClick(game) {
-    setCompletedGames([...completedGames, game]);
+    fetch(`http://localhost:3000/games/${game.id}`, {
+      method:"DELETE",
+    })
+    .then((r) => r.json())
+    .then(() => setBacklog([...backlog.filter((g) => g !== game)]))
+    setCompletedGames([...completedGames, game]); 
   }
 
   function handleAddGame(newGame) {
-    setBacklog([...backlog, newGame])
+    setBacklog([...backlog, newGame]);
   }
 
 
