@@ -1,11 +1,6 @@
 {
   "games": [
     {
-      "id": 1,
-      "name": "Metro Exodus",
-      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/60164-1.jpg"
-    },
-    {
       "id": 2,
       "name": "Persona 5 Strikers",
       "image": "https://cdn.thegamesdb.net/images/original/boxart/front/83188-1.jpg"
@@ -44,6 +39,11 @@
       "name": "Xenoblade Chronicles Definitive Edition",
       "image": "https://cdn.thegamesdb.net/images/original/boxart/front/66208-1.jpg",
       "id": 9
+    },
+    {
+      "name": "Xenoblade Chronicles Definitive Edition",
+      "image": "https://cdn.thegamesdb.net/images/original/boxart/front/66208-1.jpg",
+      "id": 10
     }
   ]
 }
