@@ -26,7 +26,8 @@ function Home({onAddGame}) {
             body: JSON.stringify(newGame)
         })
         .then((r) => r.json())
-        .then((data) => onAddGame(data));
+        .then((data) => onAddGame(data))
+        .then(() => setNewGame({name:"", image:""}))
     }
 
     return (
