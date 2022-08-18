@@ -13,13 +13,13 @@ function App() {
   const [completedGames, setCompletedGames] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/games")
+    fetch("https://backlogtrackerdata.herokuapp.com/games")
     .then((r) => r.json())
     .then((data) => setBacklog(data))
   }, [])
 
   function onGameClick(game) {
-    fetch(`http://localhost:3000/games/${game.id}`, {
+    fetch(`https://backlogtrackerdata.herokuapp.com/games/${game.id}`, {
       method:"DELETE",
     })
     .then((r) => r.json())

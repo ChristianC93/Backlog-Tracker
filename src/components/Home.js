@@ -18,7 +18,7 @@ function Home({onAddGame}) {
     
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("http://localhost:3000/games", {
+        fetch("https://backlogtrackerdata.herokuapp.com/games", {
             method:"POST",
             headers: {
                 "Content-Type":"application/json",
