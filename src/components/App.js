@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     fetch("https://backlogtrackerdata.herokuapp.com/games")
     .then((r) => r.json())
-    .then((data) => setBacklog(data))
+    .then((data) => console.log(data))
   }, [])
 
   function onGameClick(game) {
